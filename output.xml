@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.2 on linux)" generated="20200701 00:16:08.585" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.2 on linux)" generated="20200701 01:20:03.820" rpa="false">
 <suite id="s1" name="Tests" source="/mnt/c/python/RobotFramework/tests.robot">
 <test id="s1-t1" name="Positive 1 character">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -8,8 +8,8 @@
 <arg>&amp;{headers}</arg>
 <arg>IMSI=_</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.770" level="INFO">&amp;{headers} = { IMSI=_ }</msg>
-<status status="PASS" starttime="20200701 00:16:08.769" endtime="20200701 00:16:08.770"></status>
+<msg timestamp="20200701 01:20:04.002" level="INFO">&amp;{headers} = { IMSI=_ }</msg>
+<status status="PASS" starttime="20200701 01:20:04.001" endtime="20200701 01:20:04.002"></status>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <doc>Create Session: create a HTTP session to a server</doc>
@@ -17,8 +17,8 @@
 <arg>webserver</arg>
 <arg>http://127.0.0.1:5000</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.771" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200701 00:16:08.771" endtime="20200701 00:16:08.771"></status>
+<msg timestamp="20200701 01:20:04.002" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200701 01:20:04.002" endtime="20200701 01:20:04.003"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -31,17 +31,17 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200701 00:16:08.777" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.009" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'IMSI': '_'} 
  body=None 
  </msg>
-<msg timestamp="20200701 00:16:08.777" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.009" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
  status=200, reason=OK 
  body=IMSI Header is OK 
  </msg>
-<msg timestamp="20200701 00:16:08.777" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200701 00:16:08.771" endtime="20200701 00:16:08.777"></status>
+<msg timestamp="20200701 01:20:04.009" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200701 01:20:04.003" endtime="20200701 01:20:04.009"></status>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <doc>Fails if response status code is different than the expected.</doc>
@@ -49,9 +49,9 @@ given `alias`</doc>
 <arg>200</arg>
 <arg>${resp}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 00:16:08.778" endtime="20200701 00:16:08.778"></status>
+<status status="PASS" starttime="20200701 01:20:04.009" endtime="20200701 01:20:04.009"></status>
 </kw>
-<status status="PASS" starttime="20200701 00:16:08.768" endtime="20200701 00:16:08.778" critical="yes"></status>
+<status status="PASS" starttime="20200701 01:20:04.000" endtime="20200701 01:20:04.010" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Positive 15 character">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -60,8 +60,8 @@ given `alias`</doc>
 <arg>&amp;{headers}</arg>
 <arg>IMSI=09azAZ_12345678</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.785" level="INFO">&amp;{headers} = { IMSI=09azAZ_12345678 }</msg>
-<status status="PASS" starttime="20200701 00:16:08.784" endtime="20200701 00:16:08.785"></status>
+<msg timestamp="20200701 01:20:04.017" level="INFO">&amp;{headers} = { IMSI=09azAZ_12345678 }</msg>
+<status status="PASS" starttime="20200701 01:20:04.016" endtime="20200701 01:20:04.017"></status>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <doc>Create Session: create a HTTP session to a server</doc>
@@ -69,8 +69,8 @@ given `alias`</doc>
 <arg>webserver</arg>
 <arg>http://127.0.0.1:5000</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.785" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200701 00:16:08.785" endtime="20200701 00:16:08.786"></status>
+<msg timestamp="20200701 01:20:04.017" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200701 01:20:04.017" endtime="20200701 01:20:04.018"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -83,17 +83,17 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200701 00:16:08.790" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.022" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'IMSI': '09azAZ_12345678'} 
  body=None 
  </msg>
-<msg timestamp="20200701 00:16:08.790" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.022" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
  status=200, reason=OK 
  body=IMSI Header is OK 
  </msg>
-<msg timestamp="20200701 00:16:08.790" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200701 00:16:08.786" endtime="20200701 00:16:08.790"></status>
+<msg timestamp="20200701 01:20:04.022" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200701 01:20:04.018" endtime="20200701 01:20:04.022"></status>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <doc>Fails if response status code is different than the expected.</doc>
@@ -101,9 +101,9 @@ given `alias`</doc>
 <arg>200</arg>
 <arg>${resp}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 00:16:08.790" endtime="20200701 00:16:08.791"></status>
+<status status="PASS" starttime="20200701 01:20:04.022" endtime="20200701 01:20:04.023"></status>
 </kw>
-<status status="PASS" starttime="20200701 00:16:08.780" endtime="20200701 00:16:08.791" critical="yes"></status>
+<status status="PASS" starttime="20200701 01:20:04.012" endtime="20200701 01:20:04.023" critical="yes"></status>
 </test>
 <test id="s1-t3" name="Negative 16 character">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -112,8 +112,8 @@ given `alias`</doc>
 <arg>&amp;{headers}</arg>
 <arg>IMSI=09azAZ_12345678_</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.795" level="INFO">&amp;{headers} = { IMSI=09azAZ_12345678_ }</msg>
-<status status="PASS" starttime="20200701 00:16:08.795" endtime="20200701 00:16:08.795"></status>
+<msg timestamp="20200701 01:20:04.028" level="INFO">&amp;{headers} = { IMSI=09azAZ_12345678_ }</msg>
+<status status="PASS" starttime="20200701 01:20:04.028" endtime="20200701 01:20:04.028"></status>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <doc>Create Session: create a HTTP session to a server</doc>
@@ -121,8 +121,8 @@ given `alias`</doc>
 <arg>webserver</arg>
 <arg>http://127.0.0.1:5000</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.796" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200701 00:16:08.796" endtime="20200701 00:16:08.796"></status>
+<msg timestamp="20200701 01:20:04.029" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200701 01:20:04.029" endtime="20200701 01:20:04.029"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -135,17 +135,17 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200701 00:16:08.801" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.032" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'IMSI': '09azAZ_12345678_'} 
  body=None 
  </msg>
-<msg timestamp="20200701 00:16:08.801" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.033" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
  status=500, reason=INTERNAL SERVER ERROR 
  body=String lenght shotter than 1 or longer than 15 
  </msg>
-<msg timestamp="20200701 00:16:08.801" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
-<status status="PASS" starttime="20200701 00:16:08.796" endtime="20200701 00:16:08.801"></status>
+<msg timestamp="20200701 01:20:04.033" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20200701 01:20:04.029" endtime="20200701 01:20:04.033"></status>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <doc>Fails if response status code is different than the expected.</doc>
@@ -153,9 +153,9 @@ given `alias`</doc>
 <arg>500</arg>
 <arg>${resp}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 00:16:08.801" endtime="20200701 00:16:08.802"></status>
+<status status="PASS" starttime="20200701 01:20:04.033" endtime="20200701 01:20:04.033"></status>
 </kw>
-<status status="PASS" starttime="20200701 00:16:08.793" endtime="20200701 00:16:08.802" critical="yes"></status>
+<status status="PASS" starttime="20200701 01:20:04.026" endtime="20200701 01:20:04.034" critical="yes"></status>
 </test>
 <test id="s1-t4" name="Negative 0 character">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -164,8 +164,8 @@ given `alias`</doc>
 <arg>&amp;{headers}</arg>
 <arg>IMSI=</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.812" level="INFO">&amp;{headers} = { IMSI= }</msg>
-<status status="PASS" starttime="20200701 00:16:08.812" endtime="20200701 00:16:08.812"></status>
+<msg timestamp="20200701 01:20:04.041" level="INFO">&amp;{headers} = { IMSI= }</msg>
+<status status="PASS" starttime="20200701 01:20:04.040" endtime="20200701 01:20:04.041"></status>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <doc>Create Session: create a HTTP session to a server</doc>
@@ -173,8 +173,8 @@ given `alias`</doc>
 <arg>webserver</arg>
 <arg>http://127.0.0.1:5000</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.813" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200701 00:16:08.813" endtime="20200701 00:16:08.814"></status>
+<msg timestamp="20200701 01:20:04.041" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200701 01:20:04.041" endtime="20200701 01:20:04.042"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -187,17 +187,17 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200701 00:16:08.817" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.045" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'IMSI': ''} 
  body=None 
  </msg>
-<msg timestamp="20200701 00:16:08.817" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.046" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
  status=500, reason=INTERNAL SERVER ERROR 
  body=There is no IMSI header 
  </msg>
-<msg timestamp="20200701 00:16:08.817" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
-<status status="PASS" starttime="20200701 00:16:08.814" endtime="20200701 00:16:08.817"></status>
+<msg timestamp="20200701 01:20:04.046" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20200701 01:20:04.042" endtime="20200701 01:20:04.046"></status>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <doc>Fails if response status code is different than the expected.</doc>
@@ -205,9 +205,9 @@ given `alias`</doc>
 <arg>500</arg>
 <arg>${resp}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 00:16:08.818" endtime="20200701 00:16:08.818"></status>
+<status status="PASS" starttime="20200701 01:20:04.046" endtime="20200701 01:20:04.046"></status>
 </kw>
-<status status="PASS" starttime="20200701 00:16:08.804" endtime="20200701 00:16:08.818" critical="yes"></status>
+<status status="PASS" starttime="20200701 01:20:04.035" endtime="20200701 01:20:04.047" critical="yes"></status>
 </test>
 <test id="s1-t5" name="Negative without IMSI header">
 <kw name="Create Session" library="RequestsLibrary">
@@ -216,8 +216,8 @@ given `alias`</doc>
 <arg>webserver</arg>
 <arg>http://127.0.0.1:5000</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.825" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200701 00:16:08.824" endtime="20200701 00:16:08.825"></status>
+<msg timestamp="20200701 01:20:04.055" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200701 01:20:04.055" endtime="20200701 01:20:04.055"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -229,17 +229,17 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200701 00:16:08.829" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.059" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200701 00:16:08.829" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.059" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
  status=500, reason=INTERNAL SERVER ERROR 
  body=There is no IMSI header 
  </msg>
-<msg timestamp="20200701 00:16:08.829" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
-<status status="PASS" starttime="20200701 00:16:08.825" endtime="20200701 00:16:08.829"></status>
+<msg timestamp="20200701 01:20:04.059" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20200701 01:20:04.056" endtime="20200701 01:20:04.059"></status>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <doc>Fails if response status code is different than the expected.</doc>
@@ -247,9 +247,9 @@ given `alias`</doc>
 <arg>500</arg>
 <arg>${resp}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 00:16:08.829" endtime="20200701 00:16:08.830"></status>
+<status status="PASS" starttime="20200701 01:20:04.059" endtime="20200701 01:20:04.059"></status>
 </kw>
-<status status="PASS" starttime="20200701 00:16:08.820" endtime="20200701 00:16:08.830" critical="yes"></status>
+<status status="PASS" starttime="20200701 01:20:04.049" endtime="20200701 01:20:04.060" critical="yes"></status>
 </test>
 <test id="s1-t6" name="Negative unsupported character">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -258,8 +258,8 @@ given `alias`</doc>
 <arg>&amp;{headers}</arg>
 <arg>IMSI=!09azAZ_1234567</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.836" level="INFO">&amp;{headers} = { IMSI=!09azAZ_1234567 }</msg>
-<status status="PASS" starttime="20200701 00:16:08.836" endtime="20200701 00:16:08.836"></status>
+<msg timestamp="20200701 01:20:04.067" level="INFO">&amp;{headers} = { IMSI=!09azAZ_1234567 }</msg>
+<status status="PASS" starttime="20200701 01:20:04.066" endtime="20200701 01:20:04.067"></status>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <doc>Create Session: create a HTTP session to a server</doc>
@@ -267,8 +267,8 @@ given `alias`</doc>
 <arg>webserver</arg>
 <arg>http://127.0.0.1:5000</arg>
 </arguments>
-<msg timestamp="20200701 00:16:08.837" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200701 00:16:08.837" endtime="20200701 00:16:08.839"></status>
+<msg timestamp="20200701 01:20:04.067" level="INFO">Creating Session using : alias=webserver, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200701 01:20:04.067" endtime="20200701 01:20:04.068"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -281,17 +281,17 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200701 00:16:08.843" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.072" level="INFO">GET Request : url=http://127.0.0.1:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'IMSI': '!09azAZ_1234567'} 
  body=None 
  </msg>
-<msg timestamp="20200701 00:16:08.843" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
+<msg timestamp="20200701 01:20:04.072" level="INFO">GET Response : url=http://127.0.0.1:5000/ 
  status=500, reason=INTERNAL SERVER ERROR 
  body=IMSI header can contain only digits, letters and symbol _ 
  </msg>
-<msg timestamp="20200701 00:16:08.843" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
-<status status="PASS" starttime="20200701 00:16:08.839" endtime="20200701 00:16:08.843"></status>
+<msg timestamp="20200701 01:20:04.072" level="INFO">${resp} = &lt;Response [500]&gt;</msg>
+<status status="PASS" starttime="20200701 01:20:04.068" endtime="20200701 01:20:04.072"></status>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <doc>Fails if response status code is different than the expected.</doc>
@@ -299,11 +299,11 @@ given `alias`</doc>
 <arg>500</arg>
 <arg>${resp}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 00:16:08.843" endtime="20200701 00:16:08.843"></status>
+<status status="PASS" starttime="20200701 01:20:04.073" endtime="20200701 01:20:04.073"></status>
 </kw>
-<status status="PASS" starttime="20200701 00:16:08.832" endtime="20200701 00:16:08.844" critical="yes"></status>
+<status status="PASS" starttime="20200701 01:20:04.062" endtime="20200701 01:20:04.073" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200701 00:16:08.588" endtime="20200701 00:16:08.846"></status>
+<status status="PASS" starttime="20200701 01:20:03.822" endtime="20200701 01:20:04.075"></status>
 </suite>
 <statistics>
 <total>
